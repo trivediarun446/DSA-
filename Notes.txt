@@ -1,0 +1,15 @@
+What is data structure : - 
+ When a programe is dealing with the data . then how it will organised the data in main memory is called data structure .
+
+List of Data : 
+
+1) Physical Data structure :- This define that how the data arrange in the main memory 
+    i) Array 
+    ii) Matrix 
+    iii) Linked List 
+2) Logical Data structure :- This define that how the data is utlised 
+    i) stack 
+    ii) Queues
+    iii) trees 
+    vi) hashing
+    v) graph 

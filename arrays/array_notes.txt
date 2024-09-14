@@ -1,0 +1,38 @@
+Q1 ) What is array ? 
+Ans: Array is the lenear data structure . In this data structure we place the element linearly . This static in nature . We can't change the size of an array using programe execution 
+
+syntax :- data_type array_name[size];
+
+Q2) How we can decalare and initialised the array ? 
+ans : 
+main ()
+{
+  int arr[5];
+  int arr[5]={1,2,3,4,5};
+} 
+
+                            Main Memory 
+            
+--------------------------------------------------------------------
+|                        Heap             
+|
+|
+|
+|
+|-------------------------------------------------------------------
+|                       stack 
+|
+|
+|
+|   "IF we declare the array the array will story in the stack
+|
+|-------------------------------------------------------------------
+|                       Code Part
+|
+| main(){
+|
+|         -------------------
+|              ------------------- 
+|               ----------------
+|        }
+|------------------------------------------------------------------
