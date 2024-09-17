@@ -1,0 +1,57 @@
+structure :- It is the collection of data members . structure is used as a user define data type . structure can be define by using struct data type , the size of structure is depend upon the total varible declared in the structure .  
+
+declaration of structure :- 
+              struct <name> {
+               int a ; 
+               string="arun" ;
+               float b = 54.6 ; 
+
+              };
+ >>> this structure contain :- bits(int)+ bits(float), bits(string);
+
+
+ when we declare the structure in main function then the memmory is allocate in the stack  memory of the main memory 
+
+
+ --> we use dot operator for accessing the members 
+
+ we can declare the struct variable globally 
+
+method 1 : 
+ 
+struct rectangle {
+ int lenght ; int breath ; 
+};
+struct rectangle r1 ;   "here the variable is declare globally "
+int main ()
+{
+
+}
+
+
+
+
+method 2 : 
+
+struct rectangle {
+    int lenght ; int breath ; 
+
+}r1; 
+
+int main ()
+{
+
+}
+
+
+
+method 3: "for multiple variable " 
+struct rectangle {
+    int lenght ; int breath ; 
+
+}r1 , r2 ,r3,r4 ; 
+"as per the requirent we can declare n number of varibale globally
+int main ()
+{
+    
+}
