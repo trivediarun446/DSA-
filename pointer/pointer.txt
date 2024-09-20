@@ -1,0 +1,15 @@
+Main memory can be devide into the three part 1 st one is code part second one is stack and third one is heap 
+
+In stack and code part of main memory is used for the accessing Program 
+
+Heap is a external memory . Program can not access it directly . For heap memory we use pointer
+
+pointer are used for accessing external resoureces 
+
+pointer are also use for the parameter passing 
+
+* for allocating space in heap memory we use calloc function in c 
+pointing variable = (int*)calloc(nun.of element * sizeof(data_type))
+
+*for allocation space in haap memory we use new functioni in c++
+pointer variable = new int(5);
