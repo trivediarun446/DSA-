@@ -1,0 +1,94 @@
+Monolithic Programming : When we perform all task inside a main function .This type of programming is called Monolitic programming
+
+Modular Programming : When we make small small function in outside the main function and use it into the main function this type of programming is called Modular programming or procedural programming.
+
+
+explaination of a function :-
+#include<iostream>
+using namespace std ; 
+int sum(int a , int b )
+{
+    int c=0 ; 
+    c=a+b;
+    return c ;
+}
+int main()
+{
+    int x=2 ;
+    int y=3 ;
+    cout<<"this is our sum"<<endl ;
+    cout<< sum(a,b)<<endl ;
+}
+note :- 
+1) in sum function a and b is a formal variable 
+2) int sum(int a , int b ) prototype of function
+3) cout<< sum(x,y)<<endl ; function call 
+4) x,y is our actual parameters 
+5) actual and formal parameters may or may not diffrent to each others 
+
+Parameters passing Methods :- 
+
+1) passing the value : - when we pass the value to function then their is no change in actual value 
+eg : 
+
+void swap(int x , int y)
+{
+    int temp = x ;
+    x=y ; 
+    y= temp ;
+}
+int main ()
+{
+    int a =10 ; 
+    int b =20 ; 
+    swap(a,b);
+    cout<<"a , " <<endl ; 
+    // In this actual parameters are remain same 
+}
+
+
+Passing by address : 
+
+1) When we pass the value using address . Then the actual parameters are the address of the variable in which the opereation will done and  In the formal parameter we declare the pointers because they contain the address .In this methods opereations are done in actual parameters 
+
+
+void swap(int *x , int *y)// Here we pass the pointers because they contain the passing address of the actual parameters .
+{
+    int temp = *x ;
+    *x=*y ; 
+    *y= temp ;
+}
+int main ()
+{
+    int a =10 ; 
+    int b =20 ; 
+    swap(&a,&b); // Here we pass the address of two variable 
+    cout<<"a , " <<endl ; 
+    // In this actual parameters are remain same 
+}
+
+
+Passing by the reference : -
+
+1) Passing by the reference is nothing but we so some mnor change in formal parameters . but actual parameter are same . passing by a reference is only use in c++ programming but not in c language . 
+
+example : 
+void swap(int &x , int &y)
+{
+    int temp = x ;
+    x=y ; 
+    y= temp ;
+}
+int main ()
+{
+    int a =10 ; 
+    int b =20 ; 
+    swap(a,b);
+    cout<<"a , " <<endl ; 
+    // In this actual parameters are remain same 
+}
+1) Here x become a reference for a and y become a reference for b . No extra variable is made and we know that references are another and nick name of variable . 
+
+2) Here swap function is also the part of main function . In this type of parameter passing programe is called Monolithic  
+
+3) The code of swap function is pasted on the line number 86 of above code . 

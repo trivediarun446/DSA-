@@ -1,0 +1,22 @@
+1) before ruturing array from the function we use this [] . Using this comipler can automatically understand that it is an array .
+
+2) we can also use * instead of [] . * is representing the pointer  and we know that pointer may pointing towards the element or may be array .
+
+3) Some comipler are not able to understand the [] this so we can use * this also 
+
+code snippet :- 
+
+int [] fun(int n ) Here this function is call by value 
+
+{
+    int *p ; Here we declare a pointer variable 
+
+    p = (int*)malloc(n*sizeof(int)); Here pointer variable make contigues array of size n in heap memory using malloc function 
+
+    return (p); here it return the n size array 
+}
+int main ()
+{
+    int *A ; 
+    A=fun(5);
+}
