@@ -1,0 +1,56 @@
+structure as a parameter : - 
+
+structure passing  by value :
+
+1) We can pass structure as value in to the function . When we pass the actual parameter as a value then formal parameter make a new space in a stack and return the value .
+
+
+code snipet : - 
+
+struct rectangle 
+{
+    int length ; 
+    int breadth ; 
+}
+int area(struct rectangle r1 )
+{
+    int area = r1.length * r2.breadth ;
+    return area ; 
+}
+int main ()
+{
+    struct rectangle r = { 10 , 5};
+    printf("%d"  , area(r));
+}
+
+2) If we change the formal parameter then their is no change in actual parameters . 
+
+eg :- r1.length = 10 , r1.breadth =4 (formal parameter)
+     r.length = 10 , r.breadth = 5 (actual parameter )
+
+
+
+
+structure call by refrence : -
+
+1) We just pass the refrence to the function that called pass by refrence . Nothing change in  the code .
+
+code snipet :- 
+
+struct rectangle 
+{
+    int length ; 
+    int breadth ; 
+}
+int area(struct rectangle &r1 )
+{
+    int area = r1.length * r2.breadth ;
+    return area ; 
+}
+int main ()
+{
+    struct rectangle r = { 10 , 5};
+    printf("%d"  , area(r));
+}
+
+2) In this if we change in formal parameters then the changes reflect on actual parameters 
