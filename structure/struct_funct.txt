@@ -54,3 +54,46 @@ int main ()
 }
 
 2) In this if we change in formal parameters then the changes reflect on actual parameters 
+
+
+
+In structure call by address :- 
+
+code snipet :- 
+
+struct rectangle{
+    int length ; 
+    int breadth ;
+};
+int change_length(struct rectangle *ptr , int l)
+{
+  ptr->length = l ;
+}
+int main ()
+{
+    struct rectangle r = { 10 , 5}
+    change_length(&r , 20);
+
+}
+
+Note :- 
+1) We cannot pass the array call by value so we pass it as a call by refrence 
+2) If array is declared in a structure then we can access the array using call by value method . In that case if you pass the array as call by value then a new array is created in stack for that function .
+
+code snipet :- 
+
+struct test {
+    int a[5];
+    int n ;
+}
+
+void change (struct test array)
+{
+  array.a[0]=3 ;
+  array.a[1]=5 ;
+}
+int main ()
+{
+    struct test nums  = {{2,6,7,4,3}, 5};
+    change(nums) 
+}
