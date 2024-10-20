@@ -1,0 +1,38 @@
+what is link list ? 
+link list is the collection of nodes. Each node contain data and pointer to next nodes .
+
+eg of singly list : 
+
+   [ 1 | 200 ] ->  [ 4 | 300 ] -> [ 9 | 370 ] ->  [ 4 | NULL ] 
+       100            200            300               370
+
+First node : It is also know as head node it contain the data .
+
+How to define node ? 
+
+1) first of all make a class 
+2) class consist of data of int and pointer variable which consist next address of the node .
+
+Example for creating first node  : 
+
+static creation of node 
+
+class node { 
+    public : 
+    int data ; 
+    node *next ; 
+};
+int main ()
+{
+    node first_node ; 
+    first_node.data = 4 ; 
+    first_node.next = NULL ; 
+}
+
+
+SOME BASIC OPERATION DONE IN LINK LIST 
+
+1) Insertion 
+2) deletion 
+3) updatation 
+4) search 
