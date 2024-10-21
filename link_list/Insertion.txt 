@@ -46,3 +46,28 @@ else     // if linked list is created
  temp -> next = head ; 
  head = temp ; 
 }
+
+
+Insertion at the End 
+
+Approach : 
+
+1) create a tail or current node which is traversing the linked list 
+1) check the current or tail node is pointing towards the Null 
+2) then create a new node which you want to insert 
+3) The new node store the data and the null 
+4) In last give the new node address to current or tail node 
+
+code snipet : 
+
+node * current = head;
+// This is the case of traversing 
+while( current-> next != null)
+{
+  current = current -> next ; 
+}
+
+// temp node creation 
+node * temp ;
+temp = new node(value);
+current-> next = temp ; 

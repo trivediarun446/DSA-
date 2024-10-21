@@ -1,4 +1,4 @@
-// Write a cpp programe to convert user input array into the linked list 
+// Write a cpp programe to convert user input array into the linked list all node are inserted in the begning of the linked-list  
 #include<iostream>
 #include<vector>
 using namespace std ; 
