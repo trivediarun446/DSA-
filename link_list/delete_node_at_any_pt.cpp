@@ -1,13 +1,3 @@
-// Write a programe to insert the node at the end of linked list
-
-// Approach :-
-
-// 1) We create a ptr name tail which is pointing towards the head of the linked list at the time of when linked list is not created
-
-// 2) After the adding the new at the end give the address of last element to the tail pointer
-
-//  3) Which is pointing towards the end
-
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -63,6 +53,33 @@ int main()
         temp = temp-> next ; 
     }
     
-    
+    int n ; 
+    cout<<"enter the which node you want to delete "<<endl ; 
+    cin >> n ;
+    if (n==1)
+    {
+        node *temp1 = head ; 
+        head = head-> next ;
+        delete temp1 ;
+    }
+    n-- ; 
+    node *current = head ; 
+    node *pre = NULL ; 
+    while(n>0)
+    {
+        pre = current ; 
+        current=current->next ;
+        n-- ; 
+    }
+    pre->next = current->next ;
+    delete current ;
 
+    node*cur = head ; 
+    while(cur != NULL)
+    {
+        cout<< cur->data << " " << cur->next << endl ; 
+        cur= cur->next ; 
+    }
+    
+    
 }

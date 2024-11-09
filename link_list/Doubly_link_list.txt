@@ -1,0 +1,35 @@
+Doubly linked list 
+
+A doubly linked list is a type of linked list in which each node contains data and two pointers: one pointing to the next node and the other pointing to the previous node. This allows traversal of the list in both forward and backward directions.
+
+Insertion : 
+
+Their are three type of Insertion in the doubly linked list
+
+1) Insertion at the starting 
+2) Insertion at the end 
+3) Insertion at any position 
+
+==> Insertion at the starting : In this we made we insert a node at the starting of the linked list 
+
+Approach : 
+
+Suppose : 
+class node 
+{
+    public : 
+      int data ; 
+      node*pre ; 
+      node*next ; 
+    node (int val)
+    {
+        data = val ; 
+        next=Null ; 
+        pre=Null ;
+    }
+};
+
+i) First of create a temp variable of node type 
+ii) save the address of head ptr in the next of temp 
+iii) save the address of temp into the  head->pre 
+iv) Now insert the address of temp into the head 
