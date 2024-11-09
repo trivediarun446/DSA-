@@ -18,7 +18,7 @@
 
 using namespace std;
 
-int maxi(vector<int> nums , int k)
+int maxi(vector<int> &nums , int k)
 {
     int maxi_num = INT32_MIN ;
     for (int i = 0; i < k; i++)
@@ -31,7 +31,7 @@ void count_sort( vector<int> &nums , int k )
 {
     int max_num = maxi(nums , k);
     int *arr ;
-    arr = new int(max_num+1);
+    arr = new int[max_num+1]{0};
 
     for (int i = 0; i < max_num + 1 ; i++)
     {
@@ -39,16 +39,14 @@ void count_sort( vector<int> &nums , int k )
     }
 
     int i = 0 ; int j =0 ; 
-    while (i < max_num + 1)
+    while (i <= max_num)
     {
-        if(arr[i] > 0 )
+        while (arr[i] > 0)
         {
-          nums[j++] = i ;
-          arr[i]-- ; 
+            nums[j++] = i;
+            arr[i]--;
         }
-        else { 
-            i++ ; 
-        }
+        i++;
     }
     
     
