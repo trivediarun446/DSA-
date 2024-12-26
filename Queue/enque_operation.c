@@ -23,7 +23,7 @@ void enqueue(struct Queue *q , int val)
 //   Check condition queue is full or not 
    if( q->rear == q->size-1)
    {
-     printf("Queue is Empty \n");
+     printf("Queue is Full \n");
    }
    else {
     q->rear++ ; 
