@@ -1,0 +1,130 @@
+This file contain the notes of tree data structure 
+
+
+# TREE : Tree is a hierarchical structure which store and oragnise the data in the parent and child relation .It is made of nodes and edages . 
+
+
+# Important Terminology :- 
+
+1) Root :- Root is first node of any tree 
+
+2) parent :- If any node have  more then 1 child is called parent node 
+
+3) child :- A child node is a node which is descendant of another node 
+
+4) sibling :- nodes of a same parent is called sibling node 
+
+5) Ancestors :- All node in the path of root node to that node are called Ancestors 
+
+6) Degreee Of node :- Number of child of any node are called Degree of that node 
+
+7) Levels :- the number of edges between that node and the root node and Levels start from the 1 to n . 
+             if n number of edges prasent in a node then the Level of tree is n 
+
+8) Height :- The Number of edages between the root node and last leaf node . Height is start from 0 
+             If the leaf node at the position of n in any tree then the Height is n-1 
+
+9) Forest :- Collections of tree is called Forest .
+
+
+
+# Types of Tree 
+
+1) Binary Tree 
+
+2) Ternary Tree 
+
+3) N-ary Tree 
+
+
+# BINARY TREE : A tree has maximum 2 Degree then the tree is called Binary tree 
+
+# SOME BASIC TERM 
+
+1) Left Skewed :- A Binary tree that has only left nodes or no right nodes then the tree is called Left Skewed tree 
+
+2) Right Skewed :- A Binary tree that has only right nodes or no left nodes then that tree is called Right Skewed Tree 
+
+3) Labal Tree :- There is some value in the nodes of tree that tree called Labaled tree 
+
+4) unlabel Tree :- There is no value in the nodes of tree that tree is called unlabel tree 
+
+
+# Find Number of Binary Tree 
+
+=> Suppose if we have give number of nodes then we find how many possible unlabel Binary tree is create 
+
+    By using Catalan Number formula we find the number of minimum Height Binary tree 
+        
+    First method -
+         t( n ) = 2nCn / n+1  
+            
+            where ;- n + 1 = Number of trees 
+                     t(n) = Given number of nodes 
+
+
+     
+    Another formula to get the maximum Height Binary tree from the given node 
+     
+            max-Height = 2^(n-1)
+       
+
+=>  Suppose if we have give number of nodes then we find how many possible Labal Binary tree is create 
+    
+    By using Catalan Number formula we find the number of minimum Height Binary tree 
+        
+    First method -
+         t( n ) = (2nCn / n+1 ) * n! 
+            
+            where ;- 
+                    Possible shapes of = (2nCn / n+1 )
+                    No of filling a tree = n!  
+                    t(n) = Given number of nodes 
+
+
+
+                                    Height Vs Node 
+
+   
+=> Suppose if Height is given then find minimum and maximum node 
+          
+        method 1 ) 
+              
+                minimum node = h + 1 
+                  where : h = Height of tree 
+                 
+                maximum node = 2^(h+1) - 1 
+
+
+=> Suppose nodes are given then find the maximum Height and minimum Height of the tree 
+
+
+        maximum Height(h) = n - 1 
+
+        min Height :- 
+
+                formula of maximum nodes 
+                  
+                   n = 2^(h+1)-1 
+                   n + 1 = 2^(h+1) 
+                   taking log both side 
+                   log(n+1) = log2^(h+1) 
+                 
+                   h+1 = log(n+1) of base 2 
+
+                ==> h = log(n+1) - 1 of base 2 
+            
+# Note : 
+   
+    Height of Binary Tree
+        log(n+1) - 1 <= h <= n -1 
+ 
+    Number of nodes in Binary Tree 
+        h+1 <= n <= 2^(h+1) - 1 
+
+
+
+
+                  
+                   
+
