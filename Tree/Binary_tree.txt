@@ -1,0 +1,143 @@
+# Binary Tree :- 
+         
+        Tree has min 0 degree nodes and maximum 2 degree nodes then that tree is called binary tree . 
+
+
+
+# Find Number of Binary Tree 
+
+=> Suppose if we have give number of nodes then we find how many possible unlabel Binary tree is create 
+
+    By using Catalan Number formula we find the number of minimum Height Binary tree 
+        
+    First method -
+         t( n ) = 2nCn / n+1  
+            
+            where ;- n + 1 = Number of trees 
+                     t(n) = Given number of nodes 
+
+
+     
+    Another formula to get the maximum Height Binary tree from the given node 
+     
+            max-Height = 2^(n-1)
+       
+
+=>  Suppose if we have give number of nodes then we find how many possible Labal Binary tree is create 
+    
+    By using Catalan Number formula we find the number of minimum Height Binary tree 
+        
+    First method -
+         t( n ) = (2nCn / n+1 ) * n! 
+            
+            where ;- 
+                    Possible shapes of = (2nCn / n+1 )
+                    No of filling a tree = n!  
+                    t(n) = Given number of nodes 
+
+
+
+                                    Height Vs Node 
+
+   
+=> Suppose if Height is given then find minimum and maximum node 
+          
+        method 1 ) 
+              
+                minimum node = h + 1 
+                  where : h = Height of tree 
+                 
+                maximum node = 2^(h+1) - 1 
+
+
+=> Suppose nodes are given then find the maximum Height and minimum Height of the tree 
+
+
+        maximum Height(h) = n - 1 
+
+        min Height :- 
+
+                formula of maximum nodes 
+                  
+                   n = 2^(h+1)-1 
+                   n + 1 = 2^(h+1) 
+                   taking log both side 
+                   log(n+1) = log2^(h+1) 
+                 
+                   h+1 = log(n+1) of base 2 
+
+                ==> h = log(n+1) - 1 of base 2 
+            
+# Note : 
+   
+    Height of Binary Tree
+        log(n+1) - 1 <= h <= n -1 
+ 
+    Number of nodes in Binary Tree 
+        h+1 <= n <= 2^(h+1) - 1 
+
+
+
+=> Relation between internal nodes of degree 2  and External nodes in Binary Tree 
+
+                deg(0) = deg(2) + 1 
+
+
+                        
+                                    
+                                    Strict Binary Tree 
+
+We know that binary tree has 0 , 1 , 2 degree nodes . But that binary tree which has only 0 or 2 degree nodes that binary tree are
+called strict binary tree . This tree is also called strict proper tree or complete tree 
+
+
+                                     Height Vs Nodes of strict binary tree 
+
+                                
+
+=> Suppose we have given Height of tree h and we have to find the max and min nodes in tree 
+
+        formula for find min nodes :- 
+                         
+                    n = 2h + 1 
+                where :- 
+                n = minimum nodes 
+                h = Height of the tree (given)
+
+        formula for finding max nodes :- 
+
+                    n = 2^(h+1) - 1 
+                where :-
+                n= max nodes 
+                h= Height of the tree (given)
+
+
+=> Suppose we have given nodes n in the tree than we have to find the max and min Height of the tree 
+
+        Formula for finding max Height :- 
+
+                        h = log2(n+1) - 1 
+                    where:-
+                    h = max Height
+                    n = nodes(given) 
+        
+
+        Formula for finding max Height :- 
+
+                        h = (n-1)/2 
+                    where:-
+                    h = min Height
+                    n = nodes(given) 
+                           
+            
+
+
+Constraints :- 
+
+        Range of Height in strict binary tree 
+
+             log2(n+1) <= h <= (n-1)/2
+
+        Range of min and max nodes in strict binary tree 
+
+             2h <= n <= 2^(h+1)
